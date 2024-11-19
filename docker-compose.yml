@@ -1,0 +1,13 @@
+x-default-opts: &default-opts
+  restart: "no"
+  tty: true
+  stdin_open: true
+  privileged: true
+  ipc: private
+
+services:
+  kalilinux:
+    <<: *default-opts
+    image: kalilinux/kali-rolling:latest
+    container_name: kalilinux
+    network_mode: "host"
