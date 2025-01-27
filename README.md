@@ -1,9 +1,9 @@
 # Kali Linux Docker Container
-## RUN
+## run
 ```bash
 docker compose up -d
 ```
-## APT
+## install tool
 ```bash
 apt update && apt upgrade -y
 apt install nmap traceroute tcptraceroute -y
