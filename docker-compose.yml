@@ -8,6 +8,8 @@ x-default-opts: &default-opts
 services:
   kalilinux:
     <<: *default-opts
-    image: kalilinux/kali-rolling:latest
+    build:
+      context: .
+      dockerfile: dockerfile
     container_name: kalilinux
     network_mode: "host"
